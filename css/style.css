@@ -5,11 +5,10 @@
   list-style: none;
 }
 
-.body {
-}
 .container {
   width: 1400px;
   padding: 0 15px;
+ 
 }
 .header {
   margin-bottom: 100px;
@@ -31,30 +30,95 @@
 }
 
 .images {
-  top: 150px;
-  left: 690px;
+  width: 150px;
+  height: 290px;
+  top: 140px;
+  right: 490px;
   position: absolute;
   z-index: 1;
 }
-.span-image {
+
+@media screen and (min-width: 320px) {
+  .images {
+    width: 60px;
+    height: 120px;
+    top: 180px;
+    left: 770px;
+  }
+  .descont-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 75px;
+  }
+  .descont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 250px;
+    background-color: black;
+    border-radius: 10px;
+    font-weight: 200;
+    width: 200px;
+    height: 50px;
+    padding: 40px;
+
+    font-family: Arial, Helvetica, sans-serif;
+  }
 }
 
-.main {
+.images-2 {
+  width: 60px;
+  height: 100px;
+}
+.body {
+  width: 420px;
+}
+.text-images {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 1440px) {
+  .images {
+    width: 70px;
+    height: 100px;
+    top: 180px;
+    left: 150px;
+  }
+
+  .images-2 {
+    width: 50px;
+    height: 80px;
+  }
+
+  .body {
+    width: 768px;
+  }
+
+  .text-images {
+    font-size: x-large;
+    margin-left: 70px;
+  }
+  .descont-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 75px;
+  }
 }
 .main-image {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.main-image-list {
-}
 
 .text-images {
   font-family: Arial, Helvetica, sans-serif;
   font-size: larger;
-
-  margin-top: 0;
-  margin-left: 50px;
 }
 .span-number {
   display: inline-block;
@@ -110,18 +174,16 @@
   border-radius: 10px;
   margin-bottom: 400px;
 }
-.link-imternet:hover{
+.link-imternet:hover {
   transition-duration: 200ms;
-box-shadow: 1px 5px #000;
-
+  box-shadow: 1px 5px #000;
 }
 
 .footer {
   background-color: black;
   margin: 0 auto;
 }
-.footer-container {
-}
+
 .footer-text {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
@@ -142,8 +204,7 @@ box-shadow: 1px 5px #000;
 .footer-menu-item {
   margin-left: 10px;
 }
-.footer-menu-link {
-}
+
 .footer-icon-link {
   fill: #fff;
   background-color: black;
